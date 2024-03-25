@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice System - Invoice History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>MJM Jonker (PTY) LTD </h1>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button onclick="window.location.href = 'index.html'">Create Invoice</button>
+            <button onclick="window.location.href = 'history.html'" class="active">Invoice History</button>
+        </div>
+
+        <div class="content">
+            <h2>Invoice History</h2>
+            <div id="invoice-history"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        displayInvoiceHistory();
+    </script>
+</body>
+</html>

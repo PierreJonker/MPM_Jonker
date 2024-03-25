@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the content in a block */
+.invoice {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    /* Center the content */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    max-width: 100px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 20px;
+    /* Adjusted margin */
+    padding: 10px;
+    /* Adjusted padding */
+}
+
+textarea {
+    height: 150px;
+    /* Increased height for the description textarea */
+}
+
+button {
+    background-color: hsl(122, 39%, 49%);
+    color: hwb(0 100% 0%);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.invoice-list {
+    margin-top: 20px;
+}
+
+.invoice-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.company-heading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Styles for tabs */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tabs {
+    text-align: center;
+}
+
+.tabs button {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    background-color: hwb(122 30% 31%);
+    color: white;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+/* Styles for print media */
+@media print {
+    .header {
+        display: none;
+        /* Hide header when printing */
+    }
+
+    .tabs {
+        display: none;
+        /* Hide tabs when printing */
+    }
+
+    .container {
+        max-width: none;
+        /* Allow full width for printing */
+    }
+
+    .invoice {
+        width: 100%;
+        /* Expand invoice width for printing */
+    }
+
+    .bank-details {
+        display: none;
+        /* Hide bank details when printing */
+    }
+
+    .content {
+        margin-top: 10px;
+    }
+
+    .button-container {
+        display: none;
+        /* Hide buttons when printing */
+    }
+}
